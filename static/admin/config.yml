@@ -27,6 +27,15 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
 
+  - name: "artist"
+    label: "Artists"
+    folder: "src/pages/artist"
+    create: true
+    slug: "{{artist}}-{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "artist-post"}
+      - {label: "Title", name: "title", widget: "string"}
+
   - name: "pages"
     label: "Pages"
     files:
